@@ -8,8 +8,13 @@ luego informar mediante otro método el número de ISBN, el título, el autor de
 numero de páginas.
  */
 
+import Model.Libro;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Libro op = new Libro();
+        op.cargarLibro();
+        System.out.println("------------------------------");
+        System.out.println(op.toString());
     }
 }
